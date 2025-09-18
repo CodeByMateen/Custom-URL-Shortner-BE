@@ -1,0 +1,13 @@
+PORT=3000
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/mtnly?schema=public"
+BASE_URL=https://mtn.ly
+REDIS_URL=redis://localhost:6379
+
+# Sharding configuration (optional)
+# SHARDING_STRATEGY="hash"
+# TOTAL_SHARDS=3
+
+# Shard databases
+DATABASE_URL_SHARD_0="postgresql://postgres:postgres@localhost:5432/mtnly_shard_0"
+DATABASE_URL_SHARD_1="postgresql://postgres:postgres@localhost:5432/mtnly_shard_1"
+DATABASE_URL_SHARD_2="postgresql://postgres:postgres@localhost:5432/mtnly_shard_2"
